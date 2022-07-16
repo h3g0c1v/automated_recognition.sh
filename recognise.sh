@@ -135,6 +135,8 @@ if [ $(id -u) = 0 ]; then
 		if [ $value == "0" ]; then
 			clear
 			do_ping
+			echo
+			get_os
 			options
 
 		elif [ $value == "1" ]; then
