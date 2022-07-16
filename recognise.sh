@@ -94,14 +94,6 @@ while getopts ":h" arg; do
 	esac
 done
 
-#Root
-if [ $(id -u) != 0 ]; then
-
-	echo -e "\n${redColour}You need to be root${endColour}\n"
-	exit 1
-
-fi
-
 #Checks
 if [ "$*" == "" ]; then
 
@@ -121,6 +113,13 @@ if [ $whatweb_not_exist != "0" ]; then
 	echo -e "\n${redColour}To run this program is necessary have whatweb tool, so I am going to install them${endColour}"
 fi
 
+#Root
+if [ $(id -u) != 0 ]; then
+
+	echo -e "\n${redColour}You need to be root${endColour}\n"
+	exit 1
+
+fi
 
 if [ $(id -u) = 0 ]; then
 
