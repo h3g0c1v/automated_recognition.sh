@@ -1,9 +1,9 @@
 ---- Author: h3g0c1v ----
 # Automated recognition
-# Description:
+## Description:
 An automator of the simplest recognition phase we all do when initiating an attack on a victim machine.
 
-# How to use this tool:
+## How to use this tool:
 
 ./automated_recognition.sh IP
 
